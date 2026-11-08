@@ -27,7 +27,7 @@
   padding: 0;
 }
 
-.nav-link {
+.nav-link a {
   color: #cbd5e1;
   text-decoration: none;
   font-size: 15px;
@@ -35,7 +35,7 @@
   transition: color 0.2s ease;
 }
 
-.nav-link:hover {
+.nav-link a:hover {
   color: #ffffff;
   cursor: pointer;
 }

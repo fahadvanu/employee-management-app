@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './employee-list.html',
 })
 export class EmployeeList {
+  get totalEmployees() {
+    return this.employees.length;
+  }
+
+  get activeEmployees() {
+    return this.employees.filter((employee) => employee.status === 'Active').length;
+  }
+
+  get inactiveEmployees() {
+    return this.employees.filter((employee) => employee.status === 'Inactive').length;
+  }
+
   employees = [
     {
       id: 1,
